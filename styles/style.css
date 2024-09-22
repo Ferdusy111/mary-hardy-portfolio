@@ -6,5 +6,120 @@
   font-variation-settings:
     "wdth" 100;
 }
+/* shared style-------------------------------------shared style */
+.dark-2{
+  color: rgb(71, 71, 71);
+}
+.orng-btn{
+  background-color: #FD6E0A;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  padding: 18px 35px;
+  border-radius: 5px;
+  border: none;
+}
+/* header style-----------------------------------------------header style */
+.header{
+  background-image: url(../images/developer.png) ,url(../images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-color: rgb(255, 248, 243);
+}
+
+/* Nav style--------------------------------------------Nav style */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 200px;
+  /* border: 2px solid black; */
+}
+.nav-title{
+  font-weight: 800;
+  font-size: 45px;
+}
+.txt-clr{
+  color:rgb(253, 110, 10);
+}
+nav ul li {
+  list-style: none;
+  margin-right: 51px;
+}
+nav li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: rgb(71, 71, 71);
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+/* Banner style----------------------------------------------Banner style */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35px 0 200px;
+  /* border: 2px solid pink; */
+}
+.banner .banner-content{
+  /* height:356px ; */
+  max-width:580px ;
+  margin: 0;
+  /* border: 2px solid black; */
+}
+.banner .banner-greetings{
+  color: rgb(71, 71, 71);
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.banner .banner-title{
+  color: rgb(24, 24, 24);
+  font-size: 85px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.banner .banner-description{
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.banner .banner-pic{
+  width: 580px;
+} 
+.btnn{
+  margin-right: 30px;
+}
+
+/* -----------------Responsive banner-------------------- */
+/* For Small device */
+@media screen and (max-width:576px) {
+  .banner{
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+  }
+  .header{
+    background-image: none;
+  }
+  .banner-pic{
+    width:50%;
+  } 
+  .btnn{
+    margin-right:15px;
+    margin-bottom: 5px;
+  } 
+  nav,
+  nav > ul{
+    flex-direction: column;
+    gap: 10px;
+  } 
+}
+
+
 
 
