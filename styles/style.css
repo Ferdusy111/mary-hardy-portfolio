@@ -18,8 +18,15 @@
   padding: 18px 35px;
   border-radius: 5px;
   border: none;
+} 
+.section-title{
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  color: rgb(24, 24, 24);
 }
-/* header style-----------------------------------------------header style */
+/* _________________________________1ST PART____________________________ */
+/* header style----------------------------------- */
 .header{
   background-image: url(../images/developer.png) ,url(../images/header_bg.png);
   background-repeat: no-repeat;
@@ -27,7 +34,7 @@
   background-color: rgb(255, 248, 243);
 }
 
-/* Nav style--------------------------------------------Nav style */
+/* Nav style-----------------------------------------*/
 nav{
   display: flex;
   align-items: center;
@@ -55,7 +62,7 @@ nav ul {
   display: flex;
   align-items: center;
 }
-/* Banner style----------------------------------------------Banner style */
+/* Banner style------------------------------------------ */
 .banner{
   display: flex;
   justify-content: space-between;
@@ -90,35 +97,93 @@ nav ul {
 }
 .banner .banner-pic{
   width: 580px;
+  /* border: 2px solid red; */
 } 
 .btnn{
   margin-right: 30px;
 }
-
 /* -----------------Responsive banner-------------------- */
 /* For Small device */
 @media screen and (max-width:576px) {
   .banner{
-    display: flex;
     flex-direction: column;
-    margin:5px;
-  }
+    margin:20px;
+  } 
   .header{
     background-image: none;
-  }
+  } 
   .banner-pic{
-    width:50%;
+    width: 100%;
   } 
-  .btnn{
-    margin-right:15px;
-    margin-bottom: 5px;
-  } 
-  nav,
-  nav > ul{
+  nav, nav > ul{
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
+  }
+  .orng-btn{
+    margin-right: 5px;
   } 
 }
+/*______________________________2ND PART_____________________________________/
+/* main style------------- (page er majkhan er section gulir jonno)*/
+main{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+/* about style-------------------------------------- */
+.about{
+  background-color:rgb(255, 248, 243) ;
+  border-radius: 10px;
+  padding: 130px 150px;
+  margin-top: 130px;
+  text-align: center;
+} 
+.about-container{
+  width:827px ;
+  height:288px ;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+} 
+.about-items {
+  display: flex;
+  justify-content: space-around;
+}
+.section-title{ 
+  color: rgb(24, 24, 24);
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+  margin-top:0;
+} 
+.about-description { 
+  color: rgb(117, 117, 117);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.about-items .item-title{
+  margin-bottom: 0px;
+  color: rgb(117, 117, 117);
+}
+.about-items .item-description{
+  margin-top:0px;
+  font-weight: 700;
+}
+/* --------------------Responsive about--------------------- */
+/* For Small device */
+@media screen and (max-width:576px) {
+  .about-container{
+    width: 100%;
+  }
+  .about{
+    padding:20px;
+  }
+  .about-items{
+    flex-direction: column;
+  }
+}
+
+/* ____________________________3rd part_________________________________  */
 
 
 
