@@ -4,7 +4,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 /* shared style-------------------------------------shared style */
 .dark-2{
@@ -99,12 +99,28 @@ nav ul {
 }
 .banner .banner-pic{
   width: 580px;
+  /* border: 2px solid yellow; */
 } 
 .btnn{
-  margin-right: 30px;
+  background-color:transparent;
+  font-weight: bold;
+  font-size: 20px;
+  color:#FD6E0A;
+  padding: 18px 35px;
+  border-radius: 5px;
+  border-color:#FD6E0A;
+  margin-left: 30px;
 }
+.phone-icon{
+  margin-right: 5px;
+}
+
+
 /* -----------------Responsive banner-------------------- */
 /* For Small device */
+@media screen and (min-width:577px) and (max-width:992px) {
+  
+}
 @media screen and (max-width:576px) {
   .banner{
     flex-direction: column;
@@ -113,7 +129,12 @@ nav ul {
   .header{
     background-image: none;
   } 
-  .banner-pic{
+  .banner .banner-pic{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid yellow; */
+  } 
+  .banner-pic img{
     width:50%;
   } 
   nav, nav > ul{
@@ -123,7 +144,7 @@ nav ul {
   .orng-btn{
     margin-right: 5px;
   } 
-}
+}           
 
 
 /*______________________________2ND PART_____________________________________/
